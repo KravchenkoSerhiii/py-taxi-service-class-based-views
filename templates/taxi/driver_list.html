@@ -5,11 +5,11 @@
     {% for driver in driver_list %}
     <ul>
       <li>
-        Username: <a href="{{ drivers.get_absolute_url }}">{{ driver.username }}</a> License №: {{ driver.license_number }}
+        Username: <a href="{{ driver.get_absolute_url }}">{{ driver.username }}</a> License №: {{ driver.license_number }}
       </li>
     </ul>
     {% endfor %}
-  {% else %}  
+  {% else %}
     <h1>List Drivers are empty!</h1>
   {% endif %}
 {% endblock %}
